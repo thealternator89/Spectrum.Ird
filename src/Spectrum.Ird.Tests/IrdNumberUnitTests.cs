@@ -218,7 +218,7 @@ namespace Spectrum.Ird.Tests
         public void IsValid_GreaterThanUpperLimit_ReturnsFalse()
         {
             // arrange
-            var irdNumber = new IrdNumber(150000001);
+            var irdNumber = new IrdNumber(200000001);
 
             // act
             var result = irdNumber.IsValid();
