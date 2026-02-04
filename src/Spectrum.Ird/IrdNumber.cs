@@ -16,13 +16,13 @@ namespace Spectrum.Ird
     /// </para>
     /// <para>
     /// The specification used in this implementation is
-    /// <a href="https://www.ird.govt.nz/-/media/project/ir/documents/income-tax/withholding-taxes/rwt-nrwt-withholding-tax-certificate/2020-rwt-and-nrwt-certificate-filing-specification.pdf">here</a>.
+    /// <a href="https://www.ird.govt.nz/-/media/project/ir/home/documents/digital-service-providers/iir-file-upload-specification/investment-income-reporting-file-upload-specification.pdf">here</a>.
     /// </para>
     /// </remarks>
     public class IrdNumber
     {
         private const long LowerLimit = 10_000_000;
-        private const long UpperLimit = 150_000_000;
+        private const long UpperLimit = 200_000_000;
 
         private static readonly int[] PrimaryWeightings = new int[] { 3, 2, 7, 6, 5, 4, 3, 2 };
         private static readonly int[] SecondaryWeightings = new int[] { 7, 4, 3, 2, 5, 2, 7, 6 };
